@@ -1,0 +1,22 @@
+
+textarea{
+    width: 350px;
+    display: block;
+    height: 100PX;
+    padding: 3rem 2rem;
+    border-color: black;
+    border-width: medium;
+    border-style: double;
+}
+
+#output{
+    background-color: white;
+    height: 198px;
+    width: 437px;
+    /* margin: auto; */
+    display: block;
+    border: black;
+    border-width: 3px;
+    border-style: solid;
+}
+   
