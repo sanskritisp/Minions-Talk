@@ -3,6 +3,9 @@
   *{  
 box-sizing: border-box;
 }
+html{
+    display: block;
+}
 :root {
     --primary-color: orange;
     --off-white: #F3F4F6;
