@@ -8,7 +8,6 @@ box-sizing: border-box;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
 }
-
 body{
     font-family: 'Lato', sans-serif;
     /* background-color: rgb(250, 250, 161); */
@@ -77,6 +76,7 @@ div{
     font-weight: bold;
     text-decoration: underline;
     padding: 1rem 2rem;
-     margin: auto; 
+    display: block;
+     /* margin: auto;  */
 }
 
