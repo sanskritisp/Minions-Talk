@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    
+:root {
+    --primary-color: orange;
+    --off-white: #F3F4F6;
+    --dark-gray: #6B7280;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(250, 250, 161);
+}
+h1{
+
+text-decoration: underline;
+text-align: center;
+color: var(--primary-color)
+}
+hr{
+    margin: 2rem ;
+    border: 2px solid ;
+    color: var(--primary-color);
+    border-radius: 2px;
+}
+.head-img{
+width: 100px;
+height: 200px;;
+}
+    
+
+
+
 
 textarea{
     width: 350px;

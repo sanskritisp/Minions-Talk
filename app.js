@@ -1,20 +1,34 @@
-// console.log("script is working");
-// alert("this is the alert script")
-// var username = prompt("give me your username ")
-// alert("welcome!"+ username)
 var outputText = document.querySelector("#output")
-const inputTxt = document.querySelector("#txt")
+var inputTxt = document.querySelector("#txt")
 var btnTrans = document.querySelector("#btn-trans")
-// console.log(btnTrans)
-function clickevenhandler(){
-    outputText.innerText = "Translated into banana "+ inputTxt.value
 
 
-//     console.log("clicked") 
-// console.log("input", inputTxt.value)
+// var url="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var url ="https://api.funtranslations.com/translate/minion.json"
+
+function getTranslationURL(text){
+    return url + "?" + "text=" + text
 }
+function geterror(error){
+    console.log("error occured",error)
+}
+function clickeventhandler(){
 
-// add event listener
-btnTrans.addEventListener("click", clickevenhandler)
+    var txtInput = inputTxt.value;
+    fetch(getTranslationURL(txtInput))
 
+        .then(response => response.json())
+        .then(json =>{
+            var transtext =json.contents.translated;
+            outputText.innerText = transtext;
+        })
+            
+           
+        .catch(geterror)
+    };
+    btnTrans.addEventListener("click", clickeventhandler) //adding event listener
+
+
+    
+  
 
